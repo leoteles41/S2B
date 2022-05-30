@@ -4,19 +4,39 @@ body {
   text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #1C1C1C
+}
+
 .image {
-  width: 100%;
+  width: 80%;
+}
+
+.marketplaces-container {
+  display: flex;
+  align-items: center;
+  margin: 0 10%;
+}
+
+.marketplaces-container div {
+  flex: 50%;
+}
+
+.marketplaces-title {
+  color: #EC612F;
+  text-align: start;
+  font-size: 50px;
 }
 
 .people-section {
-  background-color:#eeeeee
+  background-color:#ddd4d4
 }
 
 .profile-picture {
   object-fit: cover;
-  width:150px;
-  height:150px;
-  border-radius: 150px;
+  width:120px;
+  height:120px;
+  border-radius: 120px;
   margin-bottom: 6px;
 }
 
@@ -28,15 +48,15 @@ body {
 
 .profession {
   color: #EC612F;
-  font-size: 15px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
 
 .person {
-  margin: 10px;
+  margin: 8px;
   padding: 26px;
-  border-radius: 6px;
+  border-radius: 8px;
   background-color: white;
 }
 
@@ -44,4 +64,9 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0 10%;
+}
+
+footer {
+  
 }
