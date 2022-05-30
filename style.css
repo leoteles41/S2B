@@ -1,3 +1,47 @@
 body {
+  margin: 0;
   font-family: manrope, sans-serif;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+}
+
+.people-section {
+  background-color:#eeeeee
+}
+
+.profile-picture {
+  object-fit: cover;
+  width:150px;
+  height:150px;
+  border-radius: 150px;
+  margin-bottom: 6px;
+}
+
+.name {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.profession {
+  color: #EC612F;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.person {
+  margin: 10px;
+  padding: 26px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.people-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
