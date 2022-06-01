@@ -333,13 +333,6 @@ hr {
   flex-wrap: wrap;
 }
 
-/* footer */
-
-footer {
-  height: 100px;
-  background-color: #1C1C1C;
-}
-
 @media (max-width:1075px){
   .process-arrow img {
     display: none;
