@@ -242,12 +242,11 @@ hr {
 /* logistics */
 
 #logistics-section {
-  padding: 60px 0;
+  padding: 20px 10%;
 }
 
 .logistic-container {
   justify-content: space-between;
-  padding: 16px 10%;
 }
 
 .logistic-container div {
@@ -256,13 +255,13 @@ hr {
 
 .logistics1 {
   align-items: flex-start;
-  margin-bottom: -190px;
+  margin-bottom: -160px;
   margin-top: 70px;
 }
 
 .logistics2 {
   align-items: flex-end;
-  margin-top: -190px;
+  margin-top: -160px;
   margin-bottom: 70px;
 }
 
