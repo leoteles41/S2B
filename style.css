@@ -1,9 +1,10 @@
 body {
-  font-family: manrope, sans-serif;
   text-align: center;
+  background-color: white;
 }
 
 * {
+  font-family: manrope, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -12,10 +13,34 @@ h1, h2, h3, h4, h5, h6 {
   color: #1C1C1C;
 }
 
+.title1 {
+  font-size: 50px;
+}
+.title2 {
+  font-size: 40px;
+}
+.title3 {
+  font-size: 30px;
+}
+.title4 {
+  font-size: 20px;
+}
+.title5 {
+  font-size: 13px;
+}
+
 .vertical-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 hr {
@@ -23,6 +48,10 @@ hr {
   margin: 20px auto;
   border-top: 1px #d4d4d4 solid;
   border-left: 0;
+}
+
+.white-title {
+  color: white;
 }
 
 /* main title */
@@ -46,20 +75,17 @@ hr {
   left: 0;
   right: 0;
   text-align: center;
-  padding: 0 10%;
 }
 
 #main-title {
-  font-size: 50px;
-  color: white;
   max-width: 800px;
   margin: auto;
+  padding: 0 10%;
 }
 
 /* pillars section */
 
 #pillars-title {
-  font-size: 40px;
   color:#1C1C1C;
   margin-bottom: 30px;
 }
@@ -70,17 +96,10 @@ hr {
 }
 
 .pillars-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   padding: 0px 60px;
 }
 
 .pillars-container div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 20px;
   background-color: #EC612F;
   height: 140px;
@@ -95,42 +114,28 @@ hr {
 }
 
 .pillars-subtitle {
-  color:#ffffff;
-  font-size: 20px;
   font-weight: 600;
 }
 
 /* process */
 
-.process-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 10%;
-}
-
-#process-text1 {
-  color: #ffffff;
-}
-
-.process-text h1 {
-  max-width: 600px;
-  font-size: 30px;
-  margin: 40px auto 40px auto;
+.process-section {
+  padding: 40px 10%;
 }
 
 #process-icons-section {
   background-color:#EC612F;
-  padding: 40px;
+}
+
+.process-text h1 {
+  max-width: 600px;
+  margin: 40px auto 40px auto;
 }
 
 .process-icons-container {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   width: fit-content;
   height: 280px;
-  padding-bottom: 60px;
   margin: 60px auto;
 }
 
@@ -162,20 +167,19 @@ hr {
   width: 100%;
 }
 
-.process-arrow-up {
+.process-arrow {
   align-self: center;
-  height: 30px;
-  width: 30px;
-  transform: rotate(45deg);
+  height: 20px;
+  width: 20px;
   margin-right: -12px;
 }
 
-.process-arrow-down {
-  align-self: center;
-  height: 30px;
-  width: 30px;
+.arrow-up {
+  transform: rotate(45deg);
+}
+
+.arrow-down {
   transform: rotate(135deg);
-  margin-right: -12px;
 }
 
 .process-icon {
@@ -184,25 +188,10 @@ hr {
   width: 40px;
 }
 
-.process-icon-title {
-  font-size: 13px;
-  color:#1C1C1C;
-}
-
 /* marketplaces section */
 
-#marketplace-hub-title {
-  font-size: 30px;
-}
-
 .marketplaces-container {
-  display: flex;
-  align-items: center;
-  margin: 0 10%;
-}
-
-.marketplaces-container div {
-  width: 100%;
+  padding: 100px 10%;
 }
 
 .marketplaces-title-div {
@@ -220,7 +209,6 @@ hr {
 #marketplaces-title {
   color: #EC612F;
   text-align: start;
-  font-size: 50px;
 }
 
 /* logistics */
@@ -229,20 +217,9 @@ hr {
   padding: 60px 0;
 }
 
-#logistics-title {
-  font-size: 40px;
-  text-align: start;
-  width: 40%;
-  margin-bottom: -150px;
-  margin-left: 10%;
-}
-
 .logistic-container {
-  display: flex;
   justify-content: space-between;
-  margin: 0 10%;
-  align-items: center;
-  padding: 16px;
+  padding: 16px 10%;
 }
 
 .logistic-container div {
@@ -261,18 +238,18 @@ hr {
   margin-bottom: 70px;
 }
 
+.logistics-text {
+  flex: 45%;
+}
+
 #logistics-text1 {
   align-self: flex-start;
-  flex: 45%;
   text-align: start;
-  font-size: 28px;
 }
 
 #logistics-text2 {
   align-self: flex-end;
-  flex: 45%;
   text-align: end;
-  font-size: 28px;
 }
 
 .logistic1 img {
@@ -284,7 +261,6 @@ hr {
 }
 
 .logistic-container img {
-  display: flex;
   width: 100%;
 }
 
@@ -299,11 +275,9 @@ hr {
 
 #team-title {
   margin: 30px 0;
-  font-size: 30px;
-  color: rgb(255, 255, 255);
 }
 
-.profile-picture {
+.person-picture {
   object-fit: cover;
   width:120px;
   height:120px;
@@ -313,16 +287,10 @@ hr {
 
 .name {
   font-weight: 500;
-  margin: 0;
-  padding: 0;
-  font-size: 17px;
 }
 
 .profession {
   color: #EC612F;
-  font-size: 13px;
-  margin: 0;
-  padding: 0;
 }
 
 .person {
@@ -332,9 +300,7 @@ hr {
   background-color: white;
 }
 
-.people-container {
-  display: flex;
-  justify-content: center;
+.team-container {
   flex-wrap: wrap;
   margin: 0 10%;
 }
@@ -346,24 +312,20 @@ footer {
   background-color: #1C1C1C;
 }
 
-@media (max-width:1041px){
-  #main-title-section {
-    height: 300px;
+@media (max-width:1075px){
+  .process-arrow img {
+    display: none;
   }
 
-  #main-title-section h1 {
-    font-size: 34px;
+  .logistic1 {
+    margin-bottom: 0;
+    margin-top: 70px;
   }
 
-  /* pillars */
-
-  #pillars-title {
-    font-size: 26px;
-    color:#1C1C1C;
-    margin-bottom: 30px;
+  .logistic2 {
+    margin-top: 0;
+    margin-bottom: 70px;
   }
-
-  /* marketplaces */
 
   #marketplaces-title {
     text-align: center;
@@ -371,31 +333,60 @@ footer {
 
   .marketplaces-container {
     flex-direction: column;
-  }
-
-  /* process */
-
-  .process-arrow-up {
-    transform: rotate(90deg);
-  }
-
-  .process-arrow-down {
-    transform: rotate(90deg);
+    padding: 0 10%;
   }
 }
 
-@media (max-width:500px){
+@media (max-width:780px){
+  .title1 {
+    font-size: 40px;
+  }
+  .title2 {
+    font-size: 26px;
+  }
+  .title3 {
+    font-size: 22px;
+  }
+  .title4 {
+    font-size: 18px;
+  }
+  .title5 {
+    font-size: 13px;
+  }
+
   #main-title-section {
     height: 300px;
   }
 
-  .process-text h1 {
-    margin: 20px auto 20px auto;
+  .logistic-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .process-icons-container {
-    padding-bottom: 80px;
+  .logistics-text {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 38px 0;
+  }
+
+  .logistics-text h1 {  
+    text-align: center;
+  }
+
+  .logistic-container {
+    margin: 0;
+  }
+
+  .person-picture {
+    object-fit: cover;
+    width:80px;
+    height:80px;
   }
 }
 
-
+@media (max-width:1075px){
+  .process-icons-container {
+    padding-bottom: 50px;
+  }
+}
