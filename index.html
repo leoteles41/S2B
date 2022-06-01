@@ -14,8 +14,13 @@
 </head>
 <body>
   <section id="main-title-section" class="vertical-container">
-    <img src="images/main-title-background1.jpg" alt="">
-    <h1 id="main-title" class="title1 white-title">Auxiliamos indústrias a lucrarem mais pela internet</h1>
+    <div class="slider" id="slider">
+      <div class="holder">
+        <div class="slide" id="slide-0"></div>
+        <div class="slide" id="slide-1"></div>
+        <div class="slide" id="slide-2"></div>
+      </div>
+    </div>
   </section>
   <section class="pillars vertical-container">
     <h3 id="pillars-title" class="title2">Pilares da S2B</h3>
@@ -56,42 +61,42 @@
       <h1 class="title3 white-title">Cuidamos de todo processo para levar o seu produto até o cliente final</h1>
     </div>
     <div class="process-icons-container horizontal-container">
-      <div class="process-icon-container process-bottom">
+      <div class="process-icon-container vertical-container  process-bottom">
         <img class="process-icon" src="images/icons/estrategia-icone.svg" alt="">
         <h4 class="process-icon-title title5">Estratégia</h4>
       </div>
       <div class="process-arrow arrow-up">
         <img src="images/icons/flecha.svg" alt="">
       </div>
-      <div class="process-icon-container process-top">
+      <div class="process-icon-container vertical-container process-top">
         <img class="process-icon" src="images/icons/squad-icone.svg" alt="">
         <h4 class="process-icon-title title5">Squad</h4>
       </div>
       <div class="process-arrow arrow-down">
         <img src="images/icons/flecha.svg" alt="">
       </div>
-      <div class="process-icon-container process-bottom">
+      <div class="process-icon-container vertical-container process-bottom">
         <img class="process-icon" class="process-icon" src="images/icons/ferramentas-icone.svg" alt="">
         <h4 class="process-icon-title title5">Ferramentas</h4>
       </div>
       <div class="process-arrow arrow-up">
         <img src="images/icons/flecha.svg" alt="">
       </div>
-      <div class="process-icon-container process-top">
+      <div class="process-icon-container vertical-container process-top">
         <img class="process-icon" class="process-icon" src="images/icons/fluxo-icone.svg" alt="">
         <h4 class="process-icon-title title5">Fluxos e Processos</h4>
       </div>
       <div class="process-arrow arrow-down">
         <img src="images/icons/flecha.svg" alt="">
       </div>
-      <div class="process-icon-container process-bottom">
+      <div class="process-icon-container vertical-container process-bottom">
         <img class="process-icon" class="process-icon" src="images/icons/shipping-icone.svg" alt="">
         <h4 class="process-icon-title title5">Shipping</h4>
       </div>
       <div class="process-arrow arrow-up">
         <img src="images/icons/flecha.svg" alt="">
       </div>
-      <div class="process-icon-container process-top">
+      <div class="process-icon-container vertical-container process-top">
         <img class="process-icon" class="process-icon" src="images/icons/satisfacao-icone.svg" alt="">
         <h4 class="process-icon-title title5">Altos índices de satisfação</h4>
       </div>
@@ -170,4 +175,28 @@
 
   </footer>
 </body>
+<script>
+  const slider = document.getElementById('slider');
+  let position = 0;
+  setInterval(function () {
+    position += 1;
+    if (position > 2) {
+      position = 0;
+    }
+    slider.scroll({
+      left: position * slider.offsetWidth,
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, 10000);
+
+  function rezied () {
+    console.log('moveu', position);
+    slider.scroll({
+      left: position * slider.offsetWidth,
+      top: 0,
+    });
+  };
+  window.onresize += rezied;
+</script>
 </html>
