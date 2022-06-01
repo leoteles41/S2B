@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .max-width {
-  max-width: 1280px;
+  max-width: 1380px;
   margin: auto;
 }
 
@@ -335,7 +335,7 @@ hr {
   flex-wrap: wrap;
 }
 
-@media (max-width:1075px){
+@media (max-width:1075px) {
   .title1 {
     font-size: 36px;
   }
@@ -383,7 +383,7 @@ hr {
   }
 }
 
-@media (max-width:780px){
+@media (max-width:780px) {
   .title1 {
     font-size: 32px;
   }
