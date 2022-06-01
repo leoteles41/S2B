@@ -34,6 +34,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
+.max-width {
+  max-width: 1280px;
+  margin: auto;
+}
+
 .vertical-container {
   display: flex;
   flex-direction: column;
@@ -119,10 +124,6 @@ hr {
   padding: 40px 10% 50px 10%;
 }
 
-/* .pillars-container {
-  padding: 0px 60px;
-} */
-
 .pillars-container div {
   margin: 20px;
   background-color: #EC612F;
@@ -143,12 +144,13 @@ hr {
 
 /* process */
 
-.process-section {
+#process-section {
   padding: 40px 10%;
 }
 
 #process-icons-section {
   background-color:#EC612F;
+  padding: 30px 10%;
 }
 
 .process-text h1 {
@@ -290,7 +292,7 @@ hr {
 
 /* team section */
 
-.team-section {
+#team-section {
   background-image: url(images/main-title-background1.jpg);
   background-size: cover;
   padding: 30px 10%;
@@ -357,13 +359,16 @@ footer {
     margin-bottom: 70px;
   }
 
+  #marketplaces-section {
+    padding: 20px 10%;
+  }
+
   #marketplaces-title {
     text-align: center;
   }
 
   .marketplaces-container {
     flex-direction: column;
-    padding: 20px 10%;
   }
 }
 
@@ -418,7 +423,7 @@ footer {
     width: 70px;
   }
 
-  .team-section {
+  #team-section {
     padding: 30px 2%;
   }
 
