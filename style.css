@@ -218,8 +218,8 @@ hr {
 
 /* marketplaces section */
 
-.marketplaces-container {
-  padding: 80px 10%;
+#marketplaces-section {
+  padding: 50px 10%;
 }
 
 .marketplaces-title-div {
@@ -436,6 +436,10 @@ hr {
   .pillars-container div {
     margin: 4px;
     padding: 4px;
+  }
+
+  #marketplaces-section {
+    padding: 20px 5%;
   }
 
   #marketplaces-title {
