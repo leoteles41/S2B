@@ -361,12 +361,12 @@ hr {
 
   .logistics1 {
     margin-bottom: 0;
-    margin-top: 70px;
+    margin-top: 60px;
   }
 
   .logistics2 {
     margin-top: 0;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 
   #marketplaces-section {
@@ -421,6 +421,10 @@ hr {
 
   .logistics-text h1 {  
     text-align: center;
+  }
+
+  #logistics-image1 {
+    margin-bottom: 20px;
   }
 
   .logistic-container {
