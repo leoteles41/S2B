@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
 .title5 {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .max-width {
@@ -336,6 +336,22 @@ hr {
 }
 
 @media (max-width:1075px){
+  .title1 {
+    font-size: 36px;
+  }
+  .title2 {
+    font-size: 28px;
+  }
+  .title3 {
+    font-size: 24px;
+  }
+  .title4 {
+    font-size: 17px;
+  }
+  .title5 {
+    font-size: 13px;
+  }
+
   .process-arrow img {
     display: none;
   }
@@ -369,7 +385,7 @@ hr {
 
 @media (max-width:780px){
   .title1 {
-    font-size: 40px;
+    font-size: 32px;
   }
   .title2 {
     font-size: 26px;
