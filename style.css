@@ -83,7 +83,11 @@ header {
 a {
   text-decoration: none;
   color: white;
-  margin-left: 16px;
+  margin: 0 8px 0 8px;
+}
+
+a:hover {
+  color: #EC612F;
 }
 
 /* main title */
