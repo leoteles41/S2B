@@ -25,14 +25,12 @@
     </div>
   </header>
   <section id="main-title-section" class="vertical-container">
-    <h1 id="main-title" class="title1 white-title">Auxiliamos indústrias a lucrarem mais pela internet</h1>
-    <div class="slider" id="slider">
-      <div class="holder">
-        <div class="slide" id="slide-0"></div>
-        <div class="slide" id="slide-1"></div>
-        <div class="slide" id="slide-2"></div>
-      </div>
+    <div id="slider">
+      <img class="slide active" src="images/main-title-background1.jpg" alt="pacotes de entrega">
+      <img class="slide inactive" src="images/main-title-background2.jpg" alt="cliente usando computador">
+      <img class="slide inactive" src="images/main-title-background3.jpg" alt="gráfico subindo">
     </div>
+    <h1 id="main-title" class="title1 white-title">Auxiliamos indústrias a lucrarem mais pela internet</h1>
   </section>
   <section id="pilares" class="pillars vertical-container">
     <h3 id="pillars-title" class="title2">Pilares da S2B</h3>
@@ -185,17 +183,18 @@
   </section>
 </body>
 <script>
-  const slider = document.getElementById('slider');
-  let position = 0;
+  const slides = document.getElementsByClassName('slide');
+  console.log(slides);
+  let currentSlide = 0;
   setInterval(function () {
-    position += slider.offsetWidth;
-    if (position > slider.offsetWidth * 3) {
-      position = 0;
+    slides[currentSlide].className = 'slide leaving';
+
+    currentSlide += 1;
+    if (currentSlide >= slides.length) {
+      currentSlide = 0;
     }
-    slider.scroll({
-      left: position,
-      behavior: 'smooth',
-    });
+
+    slides[currentSlide].className = 'slide coming';
   }, 8000);
 </script>
 </html>
