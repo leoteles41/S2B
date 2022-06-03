@@ -66,6 +66,26 @@ hr {
   color: white;
 }
 
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1C1C1C;
+  padding: 10px 10%;
+}
+
+#logo {
+  width: 219.75px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-left: 16px;
+}
+
 /* main title */
 
 #main-title-section {
@@ -150,7 +170,7 @@ hr {
   padding: 40px 10%;
 }
 
-#process-icons-section {
+#processo {
   background-color:#EC612F;
   padding: 30px 10%;
 }
@@ -241,7 +261,7 @@ hr {
 
 /* logistics */
 
-#logistics-section {
+#logistica {
   padding: 20px 10%;
 }
 
@@ -293,7 +313,7 @@ hr {
 
 /* team section */
 
-#team-section {
+#quem-somos {
   background-image: url(images/main-title-background1.jpg);
   background-size: cover;
   padding: 30px 10%;
@@ -316,9 +336,9 @@ hr {
   font-weight: 500;
 }
 
-.profession {
+.role {
   color: #EC612F;
-  width: 80px;
+  width: 70px;
   height: 30px;
   margin: auto;
 }
@@ -399,6 +419,11 @@ hr {
     font-size: 11px;
   }
 
+  header {
+    flex-direction: column;
+    padding: 6px 4%;
+  }
+
   #slider {
     height: 420px;
   }
@@ -435,10 +460,6 @@ hr {
     object-fit: cover;
     width:70px;
     height:70px;
-  }
-
-  .profession {
-    width: 70px;
   }
 
   #team-section {
