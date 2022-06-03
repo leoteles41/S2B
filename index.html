@@ -188,24 +188,15 @@
   const slider = document.getElementById('slider');
   let position = 0;
   setInterval(function () {
-    position += 1;
-    if (position > 2) {
+    position += slider.offsetWidth;
+    if (position > slider.offsetWidth * 3) {
       position = 0;
     }
     slider.scroll({
-      left: position * slider.offsetWidth,
+      left: position,
       top: 0,
       behavior: 'smooth',
     });
   }, 8000);
-
-  function rezied () {
-    console.log('moveu', position);
-    slider.scroll({
-      left: position * slider.offsetWidth,
-      top: 0,
-    });
-  };
-  window.onresize += rezied;
 </script>
 </html>
