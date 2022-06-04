@@ -13,15 +13,17 @@
     rel="stylesheet">
 </head>
 <body>
-  <header class="max-width">
-    <div>
-      <img id="logo" src="images/logo/logo.png" alt="logo">
-    </div>
-    <div>
-      <a href="#pilares" class="title4">Pilares</a>
-      <a href="#processo" class="title4">Processo</a>
-      <a href="#logistica" class="title4">Logística</a>
-      <a href="#quem-somos" class="title4">Quem&nbspSomos?</a>
+  <header>
+    <div id="header-container" class="max-width">
+      <div>
+        <img id="logo" src="images/logo/logo.png" alt="logo">
+      </div>
+      <div>
+        <a href="#pilares" class="title4">Pilares</a>
+        <a href="#processo" class="title4">Processo</a>
+        <a href="#logistica" class="title4">Logística</a>
+        <a href="#quem-somos" class="title4">Quem&nbspSomos?</a>
+      </div>
     </div>
   </header>
   <section id="main-title-section" class="vertical-container">
@@ -30,28 +32,28 @@
       <img class="slide inactive" src="images/main-title-background2.jpg" alt="cliente usando computador">
       <img class="slide inactive" src="images/main-title-background3.jpg" alt="gráfico subindo">
     </div>
-    <h1 id="main-title" class="title1 white-title">Auxiliamos indústrias a lucrarem mais pela internet</h1>
+    <h1 id="main-title" class="title1 white-title">Gestão de marketplaces de ponta a ponta</h1>
   </section>
   <section id="pilares" class="pillars vertical-container">
     <h3 id="pillars-title" class="title2">Pilares da S2B</h3>
       <div class="pillars-container horizontal-container">
         <div class="vertical-container">
-          <img class="pillars-icon" src="images/icons/planejamento-icone.svg" alt="planejamento icone">
+          <img id="pillars-icon-1" class="pillars-icon" src="images/icons/pillar-icon-1.svg" alt="planejamento icone">
           <h3 class="pillars-subtitle title4 white-title">Planejamento</h3>
         </div>
         <div class="vertical-container">
-          <img class="pillars-icon" src="images/icons/tecnologia-icone.svg" alt="tecnologia icone">
-          <h3 class="pillars-subtitle title4 white-title">Tecnologia</h3>
+          <img id="pillars-icon-2" class="pillars-icon" src="images/icons/pillar-icon-2.svg" alt="tecnologia icone">
+          <h3 class="pillars-subtitle title4 white-title">Pessoas</h3>
         </div>
     </div>
     <div class="pillars-container horizontal-container">
       <div class="vertical-container">
-        <image class="pillars-icon" src="images/icons/gestao-icone.svg" alt="gestão completa icone">
-        <h3 class="pillars-subtitle title4 white-title">Gestão completa</h3>
+        <img id="pillars-icon-3" class="pillars-icon" src="images/icons/pillar-icon-3.svg" alt="gestão completa icone">
+        <h3 class="pillars-subtitle title4 white-title">Processos</h3>
       </div>
       <div class="vertical-container">
-        <img class="pillars-icon" src="images/icons/planejamento-icone.svg" alt="lucratividade icone">
-        <h3 class="pillars-subtitle title4 white-title">Lucratividade</h3>
+        <img id="pillars-icon-4" class="pillars-icon" src="images/icons/pillar-icon-4.svg" alt="lucratividade icone">
+        <h3 class="pillars-subtitle title4 white-title">Parceria</h3>
       </div>
     </div>
   </section>
@@ -115,10 +117,10 @@
   <section id="process-section">
     <div class="process-container vertical-container">
       <div class="process-text">
-        <h1 class="title3">Análise estratégica tática para otimizar e rentabilizar todo o processo</h1>
+        <h1 class="title3">Solução 360 | Plug & Play</h1>
       </div>
       <div class="process-image">
-        <img src="images/image1.png" alt="Imagem estratégias e processos">
+        <img src="images/image1.jpeg" alt="Imagem estratégias e processos">
       </div>
     </div>
   </section>
@@ -145,55 +147,73 @@
     <h1 id="team-title" class="title3 white-title">Quem Somos?</h1>
     <div class="team-container horizontal-container max-width">
       <div class="person">
-        <img class="person-picture" src="images/person1.jpg" alt="Foto Kadu">
-        <h3 class="name title4">Kadu</h3>
-        <p class="role title5">CEO</p>
+        <img class="person-picture" src="images/team/Kadu _ Founder & CEO_COO .png" alt="Foto Kadu">
+        <div class="name-and-role">
+          <h3 class="name title4">Kadu</h3>
+          <p class="role title5">Founder & CEO/COO</p>
+        </div>
       </div>
       <div class="person">
-        <img class="person-picture" src="images/person2.jpeg" alt="Foto Zé">
-        <h3 class="name title4">Zé</h3>
-        <p class="role title5">CRO</p>
+        <img class="person-picture" src="images/team/José Alves _ Founder & CRO .png" alt="Foto José Alves">
+        <div class="name-and-role">
+          <h3 class="name title4">José Alves</h3>
+          <p class="role title5">Founder & CRO</p>
+        </div>
       </div>
       <div class="person">
-        <img class="person-picture" src="images/person1.jpg" alt="Foto Felipe">
-        <h3 class="name title4">Felipe</h3>
-        <p class="role title5">CFO</p>
+        <img class="person-picture" src="images/team/Felipe Valente _ Sócio & CFO .png" alt="Foto Felipe Valente">
+        <div class="name-and-role">
+          <h3 class="name title4">Felipe Valente</h3>
+          <p class="role title5">Sócio & CFO</p>
+        </div>
       </div>
       <div class="person">
-        <img class="person-picture" src="images/person2.jpeg" alt="Foto Gui">
-        <h3 class="name title4">Gui</h3>
-        <p class="role title5">CMO</p>
+        <img class="person-picture" src="images/team/Guilherme Paiva _ Sócio & CMO.JPG" alt="Foto Guilherme Paiva">
+        <div class="name-and-role">
+          <h3 class="name title4">Guilherme Paiva</h3>
+          <p class="role title5">Sócio & CMO</p>
+        </div>
       </div>
       <div class="person">
-        <img class="person-picture" src="images/person3.jpeg" alt="Foto Jennifer">
-        <h3 class="name title4">Jennifer</h3>
-        <p class="role title5">Head de Market Place</p>
+        <img class="person-picture" src="images/team/Jennifer Roberti.jpeg" alt="Foto Jennifer Roberti">
+        <div class="name-and-role">
+          <h3 class="name title4">Jennifer Roberti</h3>
+          <p class="role title5">Head de Market Place</p>
+        </div>
       </div>
       <div class="person">
-        <img class="person-picture" src="images/person1.jpg" alt="Foto Antônio">
-        <h3 class="name title4">Antônio</h3>
-        <p class="role title5">Gestor de Logística</p>
+        <img class="person-picture" src="images/team/Antônio Ascot _ Gerente de Logística .png" alt="Foto Antônio Ascot">
+        <div class="name-and-role">
+          <h3 class="name title4">Antônio Ascot</h3>
+          <p class="role title5">Gerente de Logística</p>
+        </div>
       </div>
       <div class="person">
-        <img class="person-picture" src="images/person3.jpeg" alt="foto Giovana">
-        <h3 class="name title4">Giovana</h3>
-        <p class="role title5">Gestora de Contas</p>
-    </div>
+        <img class="person-picture" src="images/team/Giovanna Avelar _ Gestora de Contas .jpeg" alt="foto Giovanna Avelar">
+        <div class="name-and-role">
+          <h3 class="name title4">Giovanna Avelar</h3>
+          <p class="role title5">Gestora de Contas</p>
+        </div>
+      </div>
+      <div class="person">
+        <img class="person-picture" src="images/team/Gabriel Alves _ Planner .png" alt="foto Grabriel Alves">
+        <div class="name-and-role">
+          <h3 class="name title4">Gabriel Alves</h3>
+          <p class="role title5">Planner</p>
+        </div>
+      </div>
     </div>
   </section>
 </body>
 <script>
   const slides = document.getElementsByClassName('slide');
-  console.log(slides);
   let currentSlide = 0;
   setInterval(function () {
     slides[currentSlide].className = 'slide leaving';
-
     currentSlide += 1;
     if (currentSlide >= slides.length) {
       currentSlide = 0;
     }
-
     slides[currentSlide].className = 'slide coming';
   }, 8000);
 </script>
