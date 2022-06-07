@@ -66,6 +66,10 @@ hr {
   color: white;
 }
 
+.orange-title {
+  color: #EC612F;
+}
+
 /* header */
 
 header {
@@ -397,6 +401,57 @@ a:hover {
 
 .team-container {
   flex-wrap: wrap;
+}
+
+/* contact */
+
+#contato {
+  margin: 50px 0;
+}
+
+#contact-title {
+  margin-bottom: 6px;
+}
+
+#contact-container {
+  max-width: 600px;
+  padding: 0 6%;
+  margin: auto;
+}
+
+#contact-container input, #contact-container textarea {
+  width: 100%;
+  height: 20px;
+  padding: 6px;
+  margin: 4px 0;
+  resize: none;
+  border-radius: 6px;
+  border: 1px #a3a3a3 solid;
+  outline: none;
+}
+
+#contact-container textarea {
+  height: 80px;
+}
+
+.contact-button {
+  background-color: #EC612F;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 @media (max-width:1075px) {
